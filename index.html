@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registreringsformulär</title>
+  </head>
+  <body>
+    <div>
+      <h2>Kontakta oss</h2>
+      <p class="ring">
+        Ring oss på 0771-55 85 00 eller fyll i kontaktformuläret. Vi kommer att
+        svara dig<br />
+        via e-post. Vi återkommer senast nästkommande vardag.
+      </p>
+      <form action="https://httpbin.org/anything" target="_blank" method="post">
+        <div class="uppgifter">
+          <div>
+            <label for="name">*För- och efternamn</label><br />
+            <input id="name" name="name" type="text" class="form" required />
+          </div>
+          <div>
+            <label for="email">*Fyll i din e-postadress</label><br />
+            <input id="email" name="email" type="email" class="form" required />
+          </div>
+          <div>
+            <label for="ort">Ort</label><br />
+            <input id="ort" name="ort" type="text" class="form" />
+          </div>
+          <div>
+            <label for="number">*Telefonnummer</label><br />
+            <input
+              id="number"
+              name="number"
+              type="number"
+              class="form number"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">*Lösenord</label><br />
+            <input
+              id="password"
+              name="password"
+              type="password"
+              class="form"
+              required
+            />
+          </div>
+        </div>
+        <p class="reg">Har du ett registrerat bolag?</p>
+        <div>
+          <input type="radio" id="bolag" name="bolag" required />
+          <label for="bolag">Ja, jag har ett registrerat bolag</label>
+          <input type="radio" id="bolag2" name="bolag" required />
+          <label for="bolag2"
+            >Nej, jag har inte något registrerat bolag än</label
+          >
+        </div>
+        <p class="reg">Vad handlar ditt ärende om?</p>
+        <div>
+          <input type="checkbox" id="finans" name="ärende" />
+          <label for="finans">Finansiering</label>
+          <input type="checkbox" id="utveckling" name="ärende2" />
+          <label for="utveckling">Affärsutveckling</label>
+          <input type="checkbox" id="risk" name="ärende3" />
+          <label for="risk">Riskkapital</label>
+          <input type="checkbox" id="övrigt" name="ärende4" />
+          <label for="övrigt">Övrigt</label>
+        </div>
+        <p class="reg">Beskriv ditt ärende</p>
+        <div class="uppgifter">
+          <div class="text">
+            <textarea rows="10"></textarea>
+          </div>
+        </div>
+        <div>
+          <input type="radio" id="samtycke" name="samtycke" required />
+          <label
+            >Ja, jag samtycker till att Almi får spara mina uppgifter.</label
+          >
+        </div>
+        <div class="link">
+          <a
+            href="https://www.almi.se/om-almi/Fakta-om-oss/informationssakerhet/personuppgifter/"
+            target="_blank"
+            >Läs hur Almi hanterar dina personuppgifter.</a
+          >
+        </div>
+
+        <div class="button">
+          <button type="submit">Skicka</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
